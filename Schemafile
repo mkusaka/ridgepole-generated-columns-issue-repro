@@ -1,0 +1,11 @@
+# create_table "users", id: :integer, force: :cascade, collation: "utf8mb4_0900_ai_ci" do |t|
+#   t.string "last_name", null: false
+#   t.string "first_name", null: false
+#   t.virtual "full_name", type: :string, as: "concat(`last_name`,_utf8mb4' ',`first_name`)", stored: true
+# end
+
+create_table "users", id: :integer, force: :cascade, collation: "utf8mb4_0900_ai_ci" do |t|
+  t.string "last_name", null: false
+  t.string "first_name", null: false
+  t.virtual "full_name", type: :string, as: "concat(`first_name`,_utf8mb4' ',`last_name`)", stored: true
+end
