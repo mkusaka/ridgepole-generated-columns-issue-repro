@@ -1,5 +1,7 @@
 # ridgepole-generated-columns-issue-repro
 
+reproduction repository for https://github.com/ridgepole/ridgepole/issues/482
+
 ## step
 1. clone this repo
 2. bundle install
